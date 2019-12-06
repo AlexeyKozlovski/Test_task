@@ -1,0 +1,115 @@
+@import url("fonts/stylesheet.css");
+
+*{	
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: 'SF Pro Display', sans-serif;
+	/*color: red;*/
+	font-weight: 400;
+    font-style: normal;
+
+}
+body{
+	position: relative;
+	padding: 3%;
+	min-height: 1000px;
+}
+section{
+	display: flex;
+	flex-direction: column;
+	min-height: 800px;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  display: flex;
+	font-size: 40px;
+	font-weight: 600;
+
+}
+.prices{  
+	display: flex;
+	flex-direction: column; /*поменять на переворот*/
+}
+
+.year,
+.month{
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #EE334B;
+	border-radius: 40px;
+	color: #EE334B;
+	padding: 10px;
+	width: 374px;
+	height: 70px;
+	margin: 5px; 			/*меняем*/
+}
+.button{
+	display: flex;
+	background: linear-gradient(to right, #EE334B, #f49f9f); 
+	color: #fff;
+	border-radius: 40px;
+	padding: 8px;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+	width: 45%;
+
+}
+.terms{
+  display: flex;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+
+}
+.terms-wrap{
+	display: flex;
+	flex-direction: column;
+
+}
+.terms-high{
+	font-size: 20px;
+
+}
+.block{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ul{
+	width: 300px;
+	list-style-type: none;
+  padding-left: 0;
+  font-size: 20px;
+}
+li{	
+	white-space: pre;
+	margin: 15px;
+}
+i{
+	color: #EE334B;
+}
+footer {
+  display: flex;
+	position: sticky;
+	font-size: 15px;
+	width: 300px;
+	bottom: 3%;
+}
+summary{
+	list-style-type: none;
+  outline: none;
+}
+details{
+  text-align: center;
+}
+.fade{
+  background: linear-gradient(180deg, black -58%, #fff 102%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+details summary::-webkit-details-marker {
+display: none;
+}
