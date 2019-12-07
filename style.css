@@ -12,7 +12,7 @@
 body{
 	position: relative;
 	padding: 3%;
-	min-height: 1000px;
+	/*min-height: 1000px;*/
 	width: 100%;
 }
 section{
@@ -94,10 +94,11 @@ i{
 }
 footer {
   display: flex;
-	position: sticky;
+	position: fixed;
 	font-size: 15px;
 	width: 300px;
 	bottom: 3%;
+	left: 11%;
 }
 summary{
 	list-style-type: none;

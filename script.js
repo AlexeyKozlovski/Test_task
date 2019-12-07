@@ -8,7 +8,7 @@ fade.classList.add("fade");
 
 function changePosition() {	
 	if(foot.style.position == "static" && details.hasAttribute('open')){
-		foot.style.position = "sticky";
+		foot.style.position = "fixed";
 		details.removeAttribute('open');
 		fade.classList.add("fade");
 	}else{
