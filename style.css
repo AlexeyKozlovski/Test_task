@@ -4,33 +4,36 @@
 	margin: 0 auto;
 	box-sizing: border-box;
 	font-family: 'SF Pro Display', sans-serif;
-	/*color: red;*/
 	font-weight: 400;
     font-style: normal;
-
 }
 body{
 	position: relative;
 	padding: 3%;
-	/*min-height: 1000px;*/
 	width: 100%;
+}
+#cross{
+	position: fixed;
+	right: 3%;
+	color: rgba(159, 156, 151, 0.5);
 }
 section{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	min-height: 800px;
-  align-items: center;
-  justify-content: center;
+	
 }
 .title{
-  display: flex;
+	display: flex;
 	font-size: 40px;
-	font-weight: 600;
+	font-weight: 700;
 
 }
 .prices{  
 	display: flex;
-	flex-direction: column; /*поменять на переворот*/
+	flex-direction: column;
 }
 
 .year,
@@ -42,23 +45,22 @@ section{
 	color: #EE334B;
 	padding: 10px;
 	width: 374px;
-	height: 70px;
-	margin: 5px; 			/*меняем*/
+	height: 80px;
+	margin: 5px; 			
 }
 .button{
 	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
 	background: linear-gradient(to right, #EE334B, #fb4b95); 
 	color: #fff;
 	border-radius: 40px;
 	padding: 8px;
-	flex-grow: 1;
-	align-items: center;
-	justify-content: center;
 	width: 45%;
-
 }
 .terms{
-  display: flex;
+	display: flex;
 	flex-grow: 1;
 	align-items: center;
 	justify-content: center;
@@ -74,16 +76,15 @@ section{
 
 }
 .block{
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 ul{
 	width: 300px;
 	list-style-type: none;
-  padding-left: 0;
-  font-size: 20px;
+	padding-left: 0;
+	font-size: 20px;
 }
 li{	
 	white-space: pre;
@@ -93,25 +94,27 @@ i{
 	color: #EE334B;
 }
 footer {
-  display: flex;
 	position: fixed;
+	display: flex;
 	font-size: 15px;
 	width: 300px;
 	bottom: 3%;
 	left: 11%;
 }
+details{
+	text-align: center;
+}
 summary{
 	list-style-type: none;
-  outline: none;
+	outline: none;
 }
-details{
-  text-align: center;
-}
-.fade{
-  background: linear-gradient(180deg, black -58%, #fff 102%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-details summary::-webkit-details-marker {
+
+summary::-webkit-details-marker {
 display: none;
 }
+.fade{
+	background: linear-gradient(180deg, black -58%, #fff 102%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
